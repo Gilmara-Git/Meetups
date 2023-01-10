@@ -1,4 +1,10 @@
 # Getting Started with Create React App
+Buiding a SPA ( Single Page Application with React)
+
+Tools:
+React Route V5
+npm install react-router-dom
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
