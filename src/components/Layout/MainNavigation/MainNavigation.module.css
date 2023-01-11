@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;700&display=swap');
+.header{
+    width: 100%;
+    background-color: #77002e;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 5rem;
+}
+
+.list{
+    display: flex;
+    margin-right: 5rem;
+    gap: 2rem;
+
+}
+
+.item{
+    list-style-type: none;
+  
+}
+
+.link {
+    color: #cecece;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+
