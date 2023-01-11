@@ -1,14 +1,23 @@
-# Getting Started with Create React App
-Buiding a SPA ( Single Page Application with React)
+# MeetUp application
 
-Tools:
+Buiding a SPA ( Single Page Application) with React
+npx create-react-app my-app
+
+Routing:
 React Route V5
-npm install react-router-dom
+npm install react-router-dom@5
 
+Defined the routes with <Route>. Added the 'exact' property to show the exact route.
+Wrapped it around <Switch> to show the active page
+Used the <Link> component provided by the react-router-dom instead of the Anchor tag <a>, so, it prevent the browser from sending a request, and it changes the url in the url bar and loads the appropriate component on the screen just with React and Javascript.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Styling the App
+'Create React app' gives us a feature that allows us to style our component in a way that it wont clash with other components even if a ClassName is named the same, which is css modules.  This is achieved because the styles as scope when using Css Modules. It dynamically creates/modifies our className to a unique name.
+So, that is how I am styling this app. 
+Example how the file should be named:
+MainNavigation.module.css
+When you import it, you can import as 'classes' and this is an object of properties that can be used to style the component. 
 
-## Available Scripts
 
 In the project directory, you can run:
 
