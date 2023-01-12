@@ -1,12 +1,15 @@
-import DUMMY_MEETUPS from "../../Dummy-data/DummyMeetup";
 import MeetupItem from "../MeetupItem";
 import classes from './MeetupList.module.css';
 
-const MeetupList = () => {
+
+const MeetupList = (props) => {
   return (
+   
     <ul className={classes.list}>
-      {DUMMY_MEETUPS.map((meetup) => (
+      {props.meetups.map((meetup) => (
         <MeetupItem
+          key={meetup.id}
+          id={meetup.id}
           title={meetup.title}
           image={meetup.image}
           description={meetup.description}
@@ -14,6 +17,7 @@ const MeetupList = () => {
         />
       ))}
     </ul>
+  
   );
 };
 
