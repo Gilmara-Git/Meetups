@@ -2,7 +2,7 @@
 .header{
     width: 100%;
     background-color: #77002e;
-    height: 3rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,8 +31,12 @@
     color: #cecece;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     
 }
 
+.link:hover{
+    color: white;
+    font-weight: 700;
+}
 

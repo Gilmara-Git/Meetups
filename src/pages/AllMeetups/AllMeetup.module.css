@@ -1,5 +1,28 @@
 .container{
     width: 100%;
-    color: #cecece;
-    height: 50%;
+    display: flex;
+    justify-content: center;
+    
 }
+
+/* .meetupContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.imageContainer {
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.image{
+    width: 100%;
+    object-fit: cover;
+  
+} */

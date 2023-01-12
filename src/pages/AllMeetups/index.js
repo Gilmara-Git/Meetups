@@ -1,11 +1,12 @@
-import DUMMY_MEETUPS from './DummyMeetup.js';
-import classes from './AllMeetup.module.css';
+import classes from "./AllMeetup.module.css";
+import MeetupList from "../../components/MeetupList";
 
-const AllMeetups = ()=>{
-return (<div className={classes.container}>
-   {DUMMY_MEETUPS.map(meetup=><p>{meetup.id}</p>)}
-   {/* create a component to display the Dummy meetup  */}
-</div>)
+const AllMeetups =()=> {
+  return (
+    <div className={classes.container}>
+      <MeetupList />
+    </div>
+  );
 };
 
-export default AllMeetups; 
+export default AllMeetups;
