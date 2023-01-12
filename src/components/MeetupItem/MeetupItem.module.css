@@ -2,6 +2,7 @@
     list-style: none;
     overflow: hidden;
     margin: 50px;
+    padding: 20px;
 }
 .title{
     text-align: center;
@@ -12,11 +13,12 @@
 }
 
 .image{
+    object-fit: fill;
     width: 100%;
     height: 20rem;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-    box-shadow: 3px 5px 5px rgba(0,0,0,0.4);
+  
 }
 .details{
     display: flex;
@@ -33,5 +35,28 @@
     padding: 0.4rem;
     border-radius: 4px;
     margin-bottom: 4px;
+    margin-top: 10px;
   
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.favoriteButton{  
+    background-color:#99033d;
+    width: 15%;    
+    color: white;
+    border-radius: 8px;
+    padding: 4px;  
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.favoriteButton:hover{
+    background-color:#38071a;
+    transition: 500ms; 
 }
