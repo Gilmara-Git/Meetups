@@ -3,11 +3,66 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    margin-top:  50px;
     
 }
 
-.form {
-    border: 1px solid rgba(0,0,0,0.4);
-    padding: 20px;
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(0,0,0,0.6);
+    font-weight: 700;
+    margin: 8px;
+}
+
+.formContainer {
     background-color: #77002e;
+    padding: 50px;
+    margin-top: 30px;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.fieldContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.label{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.inputField{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #77002e;
+}
+
+.inputTextarea{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1.1rem;
+    color: #77002e;
+}
+
+.button{
+    width: 100%;
+    background-color:#38071a;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid white;
+}
+.button:hover{
+    background-color:#99033d; 
+    transition: 500ms; 
 }

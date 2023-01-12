@@ -9,27 +9,27 @@ const NewMeetups = ()=>{
 
     return (
     <div className={classes.formWrapper}>
-        <h1>Add your Meetup</h1>
-        <div className={classes.form}>           
+        <h1 className={classes.title}>Add your Meetup</h1>
+        <div className={classes.formContainer}>           
             <form onSubmit={onSubmitHandler}>
-                <div>
-                    <label htmlFor="title">Title</label>
-                    <input type='text' id="title" placeholder='Name your meetup'/>
+                <div className={classes.fieldContainer}>
+                    <label htmlFor="title" className={classes.label}>Title</label>
+                    <input type='text' id="title" className={classes.inputField}placeholder='Name your meetup'/>
                 </div>
 
-                <div>
-                    <label htmlFor="image">Image</label>
-                    <input type='text' id="image" placeholder='Enter an image address'/>
+                <div className={classes.fieldContainer}>
+                    <label htmlFor="image" className={classes.label}>Image</label>
+                    <input type='text' id="image" className={classes.inputField}placeholder='Enter the city image address'/>
                 </div>
-                <div>
-                    <label htmlFor="description">Title</label>
-                    <textarea id="description" placeholder='Describe your meetup'/>
+                <div className={classes.fieldContainer}>
+                    <label htmlFor="description" className={classes.label}>Description</label>
+                    <textarea id="description" className={classes.inputTextarea} placeholder='Describe your meetup'rows='3'/>
                 </div>
-                <div>
-                    <label htmlFor="coord">Coordinates</label>
-                    <input type='text' id="coord" placeholder='Provide latitude and longitude'/>
+                <div className={classes.fieldContainer}>
+                    <label htmlFor="coord" className={classes.label}>City/Country</label>
+                    <input type='text' id="coord" className={classes.inputField}placeholder='Provide the city and country'/>
                 </div>
-                <button>Add your meeting</button>
+                <button className={classes.button}>Add your meeting</button>
             </form>
         </div>
 
