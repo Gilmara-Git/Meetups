@@ -1,9 +1,7 @@
 import { useRef } from "react";
 import classes from "./NewMeetupForm.module.css";
-import DUMMY_MEETUPS from "../../Dummy-data/DummyMeetup";
 
-
-const NewMeetupForm = () => {
+const NewMeetupForm = (props) => {
     const nameUseRef = useRef();
     const imageUseRef = useRef();
     const descriptionUseRef = useRef();
@@ -26,12 +24,14 @@ const NewMeetupForm = () => {
       location: enteredLocation,
     };
 
-    DUMMY_MEETUPS.push(newMeetup);
 
     nameUseRef.current.value = "";
     imageUseRef.current.value = "";
     descriptionUseRef.current.value = "";
     locationUseRef.current.value = "";
+
+    props.onAddMeetup(newMeetup);
+
   };
 
   return (

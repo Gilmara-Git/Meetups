@@ -3,26 +3,17 @@
     display: flex;
     justify-content: center;
     
+    
 }
-
-/* .meetupContainer{
+.loadingContainer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-
+    height: 100vh;
+   
 }
 
-.imageContainer {
-    width: 80%;
-    height: 60%;
-    overflow: hidden;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+.loading{
+    font-size: 3rem;
+    color: rgba(0,0,0,0.6);
 }
-
-.image{
-    width: 100%;
-    object-fit: cover;
-  
-} */
