@@ -1,7 +1,5 @@
 import { useRef } from "react";
 import classes from "./NewMeetupForm.module.css";
-import DUMMY_MEETUPS from "../../Dummy-data/DummyMeetup";
-
 
 const NewMeetupForm = (props) => {
     const nameUseRef = useRef();
