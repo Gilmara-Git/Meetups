@@ -3,8 +3,8 @@ import classes from './MeetupList.module.css';
 
 
 const MeetupList = (props) => {
-  return (
-   
+
+  return (   
     <ul className={classes.list}>
       {props.meetups.map((meetup) => (
         <MeetupItem
