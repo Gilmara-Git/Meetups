@@ -14,27 +14,29 @@ npm install react-router-dom@5
 Defined the routes with ```<Route>```. 
 Added the ***exact*** property to show the exact route.
 Wrapped the ***routes*** around ```<Switch>``` to show the active page.
-Used the ```<Link>``` component provided by the react-router-dom **instead of** the Anchor tag ```<a>```, so, it prevents the browser from sending a request. 
+Used the ```<Link>``` component provided by the react-router-dom **instead of** the anchor tag ```<a>```, so, it prevents the browser from sending requests. 
 
 **Firebase:**
 [firebase](https://firebase.google.com/)
 Sign in with your google account. 
 Provide a project name, disable Google Analytics
-Use **Real Time Database** > Create Database > Start in Test Mode in order to be able to send requests.
-This sets up a database and an API for us to send requests.
+Use **Real Time Database** > Create Database > Start in **Test Mode** in order to be able to send requests.
+This sets up a **database** and an **API** for us to send requests.
 We send the request to the API which behind the scenes stores the data in the database.
-**How to se the request on this Firebase API** 
+**How to see the requests on this Firebase API** 
+[**Link** to Firebase console database](https://console.firebase.google.com/project/meetup-2f38d/database/meetup-2f38d-default-rtdb/data/~2F)
+
 <h1><img src=""/></h1>
 
 ##Styling the App
-***Create React app*** gives us a feature (**css modules**) that allows us to style our component in a way that it wont clash with other classes.  
+***Create React app*** gives us a feature (**css modules**) that allows us to style our component in a way that it wont clash with other classes/components.  
 This is achieved because the styles are scoped when using **Css Modules**. It **dynamically** creates/modifies each className to a unique name.
 Example how the file should be named:```MainNavigation.module.css```
-When you import it, you can import as **classes** and this is an object of properties that can be used to style the component. 
+When you import it, you can import as **classes** and this is an object of properties that can be used to style your component. 
 Example of how to import a css module file.
 ```import classes from "./AllMeetup.module.css";```
 
-##To run the project:
+## To run the project:
 In the project directory, you can run:
 
 ## `clone`  
