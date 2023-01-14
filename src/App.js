@@ -13,13 +13,13 @@ function App() {
     <div>
       <MainNavigation />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/" exact >
           <AllMeetups />
         </Route>
-        <Route path="/new-meetups">
+        <Route path="/new-meetups" >
           <NewMeetUps />
         </Route>
-        <Route path="/favorites">
+        <Route path="/favorites" >
           <Favorites />
         </Route>
       </Switch>

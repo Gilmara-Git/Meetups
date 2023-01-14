@@ -6,12 +6,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
 }
+
+.header a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    
+    
+}
+
+/* header a:active : link becomes active when clicked
+ The first rule incorporates "pseudo" classes, which target the element when it's in a certain state. 
+The :active pseudo-selector applies to the element when the user is clicking on it. */
+
+header a:hover, 
+header a:active, 
+header a.active{
+    color: white;
+    font-weight: 700;
+    border-bottom: 0.5px solid #cecece;
+    
+}
+
 .logo {
     color: white;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
     margin-left: 5rem;
 }
 
@@ -24,27 +48,19 @@
 
 .item{
     list-style-type: none;
-  
-}
-
-.link {
-    color: #cecece;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.2rem;
     
-}
-
-.link:hover{
-    color: white;
-    font-weight: 700;
+    
 }
 
 .favoritesIndicator{
     margin-left: 10px;
-    background-color: #99033d;
-    padding: 2px 8px;
-    border-radius: 12px;
+    background-color: #99033d;  
+    border-radius: 5px;
     border: 1px solid #cecece;
-
+    font-size: 1rem;
+    padding-inline: 6px;
+    margin-bottom:10px;
+    color: white;
+    font-weight: bold;
+    
 }
