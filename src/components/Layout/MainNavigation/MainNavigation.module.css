@@ -40,3 +40,11 @@
     font-weight: 700;
 }
 
+.favoritesIndicator{
+    margin-left: 10px;
+    background-color: #99033d;
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid #cecece;
+
+}

@@ -4,8 +4,12 @@ import AllMeetups from "./pages/AllMeetups";
 import NewMeetUps from "./pages/NewMeetups";
 import Favorites from "./pages/Favorites";
 
+
+
+
 function App() {
   return (
+  
     <div>
       <MainNavigation />
       <Switch>
@@ -20,6 +24,7 @@ function App() {
         </Route>
       </Switch>
     </div>
+
   );
 }
 
