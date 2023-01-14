@@ -5,10 +5,10 @@
 
 <h1 align="center"><img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-gif-maker_8eB3qGaGz.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673725536563" alt="gif showing the app"</h1>
 
-##Motivation
+#Motivation
 Project developed to practice **React Route v5** and **Google Firebase** to  simulate a backend (Api with a database)
 
-##Technologies:
+#Technologies:
 **React**
 
 **React Route v5**
