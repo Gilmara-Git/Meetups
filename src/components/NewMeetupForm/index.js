@@ -73,7 +73,7 @@ const NewMeetupForm = (props) => {
             id="description"
             className={classes.inputTextarea}
             placeholder="Describe your meetup"
-            rows="3"
+            rows="2"
             required
           ></textarea>
         </div>
