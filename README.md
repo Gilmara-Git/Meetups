@@ -5,10 +5,12 @@
 
 <h1 align="center"><img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-gif-maker_8eB3qGaGz.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673725536563" alt="gif showing the app"</h1>
 
-#Motivation
+
+<h1 align="center"align="center">Motivation</h1>
 Project developed to practice **React Route v5** and **Google Firebase** to  simulate a backend (Api with a database)
 
-#Technologies:
+<h1 align="center"align="center">Technologies</h1>
+
 **React**
 
 **React Route v5**
@@ -33,7 +35,9 @@ Then we fetch the data from Firebase.
 
 **P.s**
 In order to play with the browser local storage, saved the **Favorites items** into the **localStorage* by passing a **react state** with a list of **Meetups** to it.
-## Styling the App
+
+<h1 align="center"align="center">Styling the App</h1>
+
 ***Create React app*** gives us a feature (**css modules**) that allows us to style our component in a way that it wont clash with other classes/components.  
 This is achieved because the styles are scoped when using **Css Modules**. It **dynamically** creates/modifies each className to a unique name.
 Example how the file should be named:```MainNavigation.module.css```
