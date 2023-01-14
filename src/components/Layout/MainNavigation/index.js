@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 import FavoritesContext from "../../../store/favorites-context";
 import { useContext } from "react";
@@ -11,22 +11,22 @@ const MainNavigation = () => {
       <div className={classes.logo}>Meetups Place</div>
       <ul className={classes.list}>
         <li className={classes.item}>
-          <Link to="/" className={classes.link}>
+          <NavLink to="/" exact activeClassName={classes.active}>
             All Meetups
-          </Link>
+          </NavLink>
         </li>
         <li className={classes.item}>
-          <Link to="/new-meetups" className={classes.link}>
+          <NavLink to="/new-meetups" activeClassName={classes.active}>
             Add New Meetup
-          </Link>
+          </NavLink>
         </li>
         <li className={classes.item}>
-          <Link to="/favorites" className={classes.link}>
+          <NavLink to="/favorites" activeClassName={classes.active}>
             Favorite Meetups
+          </NavLink>
             <span className={classes.favoritesIndicator}>
                 {favAmount.totalFavorites}
             </span>
-          </Link>
         </li>
       </ul>
     </header>
