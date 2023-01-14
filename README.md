@@ -1,13 +1,17 @@
-<h1 align="center">MeetUp application</h1>
+<h1 align="center"align="center">Meetups application</h1>
 
 
-This is a SPA ( Single Page Application) with React created as : <br/> ```npx create-react-app my-app```
+<h1 align="center"><img src='https://ik.imagekit.io/cnbmdh4b9w/Screenshot_2_xfikzQBbX.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723610101' alt='Main Page'/></h1>
+
+<h1 align="center"><img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-gif-maker_8eB3qGaGz.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1673725536563" alt="gif showing the app"</h1>
 
 ##Motivation
-Project developed to practice 'React Route v5' and **Google Firebase** to  simulate a backend (Api with a database)
-##Tools:
-**Routing:**
-React Route v5
+Project developed to practice **React Route v5** and **Google Firebase** to  simulate a backend (Api with a database)
+
+##Technologies:
+**React**
+
+**React Route v5**
 ```npm install react-router-dom@5```
 
 Defined the routes with ```<Route>```. 
@@ -23,12 +27,13 @@ Provide a project name, disable Google Analytics
 Use **Real Time Database** > Create Database > Start in **Test Mode** in order to be able to send requests.
 This sets up a **database** and an **API** for us to send requests.
 We send requests to the API, which behind the scenes stores the data in the database.
-**How to see the requests on this Firebase API** 
-[**Link** to Firebase console database](https://console.firebase.google.com/project/meetup-2f38d/database/meetup-2f38d-default-rtdb/data/~2F)
+Then we fetch the data from Firebase.
+**Example:**
+<h1 align="center"><img src='https://ik.imagekit.io/cnbmdh4b9w/firebase_07XHKTtVii.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673723390157'alt="database in Firebase"/></h1>
 
-<h1><img src=""/></h1>
-
-##Styling the App
+**P.s**
+In order to play with the browser local storage, saved the **Favorites items** into the **localStorage* by passing a **react state** with a list of **Meetups** to it.
+## Styling the App
 ***Create React app*** gives us a feature (**css modules**) that allows us to style our component in a way that it wont clash with other classes/components.  
 This is achieved because the styles are scoped when using **Css Modules**. It **dynamically** creates/modifies each className to a unique name.
 Example how the file should be named:```MainNavigation.module.css```
@@ -46,6 +51,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+
 
 

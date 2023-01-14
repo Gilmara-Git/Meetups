@@ -2,7 +2,7 @@ const DUMMY_MEETUPS= [{
     id: Math.ceil(Math.random() * 1000),
     title: " First meetup", 
     image: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg" , 
-    description: "Palace of Westminster from the dome on Methodist Central Hal",
+    description: "Palace of Westminster from the dome on Methodist Central Hall",
     location: "London, United Kingdom" 
 }, 
 {   id: Math.ceil(Math.random() * 1000),
