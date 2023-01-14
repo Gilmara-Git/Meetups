@@ -1,28 +1,28 @@
 <h1 align="center">MeetUp application</h1>
 
 
-This is a SPA ( Single Page Application) with React
-To **create** the project: npx create-react-app my-app
+This is a SPA ( Single Page Application) with React created as : <br/> ```npx create-react-app my-app```
 
 ##Motivation
-Project developed to practice 'React Route v5' and simulate a backend (Api + database) with google Firebase
+Project developed to practice 'React Route v5' and **Google Firebase** to  simulate a backend (Api with a database)
 ##Tools:
 **Routing:**
 React Route v5
-npm install react-router-dom@5
+```npm install react-router-dom@5```
 
 Defined the routes with ```<Route>```. 
 Added the ***exact*** property to show the exact route.
 Wrapped the ***routes*** around ```<Switch>``` to show the active page.
 Used the ```<Link>``` component provided by the react-router-dom **instead of** the anchor tag ```<a>```, so, it prevents the browser from sending requests. 
+Replaced ```<Link>``` with ```<NavLink>```, in order to show the active link by using activeClassName on the ```<NavLink>```
 
-**Firebase:**
-[firebase](https://firebase.google.com/)
+**Firebase to simulate an API which uses a RealTime database:**
+[ Link to Firebase](https://firebase.google.com/)
 Sign in with your google account. 
 Provide a project name, disable Google Analytics
 Use **Real Time Database** > Create Database > Start in **Test Mode** in order to be able to send requests.
 This sets up a **database** and an **API** for us to send requests.
-We send the request to the API which behind the scenes stores the data in the database.
+We send requests to the API, which behind the scenes stores the data in the database.
 **How to see the requests on this Firebase API** 
 [**Link** to Firebase console database](https://console.firebase.google.com/project/meetup-2f38d/database/meetup-2f38d-default-rtdb/data/~2F)
 
