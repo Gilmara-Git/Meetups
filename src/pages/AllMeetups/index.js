@@ -7,6 +7,7 @@ import MeetupList from "../../components/MeetupList";
 const AllMeetups =()=> { 
  const [loadedMeetups, setLoadedMeetups] = useState([]);
  const [isLoading, setIsLoading ] = useState(true);
+ const [hasError , setHasError ] = useState(null);
 
  useEffect(()=>{
   setIsLoading(true);
@@ -26,8 +27,20 @@ const AllMeetups =()=> {
   }
     setLoadedMeetups(meetups);    
     setIsLoading(false);
+  }).catch(error =>{ 
+    setHasError(error); 
   })
+ 
+  
 }, [])
+
+if(hasError){
+  return <section className={classes.errorContainer}>
+  <p className={classes.error}>
+    An error prevented the page to load meetups.
+  </p> 
+</section>
+}
 
 
 if(isLoading){
