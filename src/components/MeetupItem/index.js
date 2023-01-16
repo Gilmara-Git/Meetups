@@ -1,7 +1,8 @@
 import classes from "./MeetupItem.module.css";
 import Card from "../Layout/Card";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import FavoritesContext from "../../store/favorites-context";
+import { FaHeart} from "react-icons/fa";
 
 const MeetupItem = (props) => {
 
@@ -27,7 +28,11 @@ const MeetupItem = (props) => {
   return (
     <Card>
       <li className={classes.list}>
-        <h1 className={classes.title}>{title}</h1>
+        <div className={classes.favoriteAligner}>
+          <h1 className={classes.title}>{title}</h1> 
+          {isFavorite &&<FaHeart color="green"/>} 
+        
+        </div>
         <img src={image} alt={title} className={classes.image} />
         <div className={classes.details}>
           <span className={classes.label}>
@@ -42,7 +47,7 @@ const MeetupItem = (props) => {
             className={classes.favoriteButton}
             onClick={toggleFavoriteHandler}
           >
-            {isFavorite ? "Remove from favorites" : "Favorites"}
+            {isFavorite ? "Remove from favorites" : " To favorites"}
           </button>
         </div>
       </li>

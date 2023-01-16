@@ -3,6 +3,8 @@ import MainNavigation from "./components/Layout/MainNavigation";
 import AllMeetups from "./pages/AllMeetups";
 import NewMeetUps from "./pages/NewMeetups";
 import Favorites from "./pages/Favorites";
+import NotFound from './pages/NotFound';
+import React from 'react';
 
 
 
@@ -21,6 +23,9 @@ function App() {
         </Route>
         <Route path="/favorites" >
           <Favorites />
+        </Route>
+        <Route path="*" >
+         <NotFound />
         </Route>
       </Switch>
     </div>

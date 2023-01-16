@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import FavoritesContext from "../../store/favorites-context";
 import MeetupList from "../../components/MeetupList";
 import classes from "./Favorites.module.css";
 import { useHistory } from "react-router-dom";
-import { useState, useEffect } from 'react';
+
 
 
 const Favorites = () => {

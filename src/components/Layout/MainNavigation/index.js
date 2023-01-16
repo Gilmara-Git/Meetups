@@ -1,11 +1,15 @@
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 import FavoritesContext from "../../../store/favorites-context";
-import { useContext } from "react";
+import React, { useContext } from "react";
+
+
 
 const MainNavigation = () => {
-  const favAmount = useContext(FavoritesContext);
-
+  const favCtx = useContext(FavoritesContext);
+  const totalFavorites = favCtx.totalFavorites;
+  console.log(totalFavorites)
+  
   return (
     <header className={classes.header}>
       <div className={classes.logo}>Meetups Place</div>
@@ -24,8 +28,8 @@ const MainNavigation = () => {
           <NavLink to="/favorites" activeClassName={classes.active}>
             Favorite Meetups
           </NavLink>
-            <span className={classes.favoritesIndicator}>
-                {favAmount.totalFavorites}
+            <span className={totalFavorites > 0 ? classes.favoritesActive : classes.favorites }>
+              {totalFavorites}               
             </span>
         </li>
       </ul>
