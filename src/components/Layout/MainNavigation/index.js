@@ -8,7 +8,6 @@ import React, { useContext } from "react";
 const MainNavigation = () => {
   const favCtx = useContext(FavoritesContext);
   const totalFavorites = favCtx.totalFavorites;
-  console.log(totalFavorites)
   
   return (
     <header className={classes.header}>

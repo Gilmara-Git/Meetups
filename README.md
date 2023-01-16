@@ -12,6 +12,7 @@ Project developed to practice **React Route v5** and **Google Firebase** to  sim
 <h1 align="center"align="center">Technologies</h1>
 
 **React**
+Hooks: useState, useEffect, useContext 
 
 **React Route v5**
 ```npm install react-router-dom@5```
