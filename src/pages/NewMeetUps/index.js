@@ -2,7 +2,7 @@ import { useHistory } from 'react-router-dom';
 import classes from "./NewMeetups.module.css";
 import NewMeetupForm from "../../components/NewMeetupForm";
 import Card from "../../components/Layout/Card";
-
+import React from  'react';
 const NewMeetups = () => {
     const history = useHistory();
 

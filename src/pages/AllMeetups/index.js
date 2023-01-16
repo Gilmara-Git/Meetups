@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from "./AllMeetup.module.css";
 import MeetupList from "../../components/MeetupList";
+import { FiHeart } from "react-icons/fi";
 
 
 

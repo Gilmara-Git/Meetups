@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import classes from "./NewMeetupForm.module.css";
+import React from 'react';
 
 const NewMeetupForm = (props) => {
     const nameUseRef = useRef();
